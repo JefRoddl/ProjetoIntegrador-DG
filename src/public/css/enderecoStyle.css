@@ -1,0 +1,422 @@
+.pagamentoSeguro {
+    height: 3rem;   
+    display: flex;
+    background-color: rgb(250, 250, 250);
+    border-bottom: ridge;
+    border-top: ridge;
+    margin-top: 8rem;
+}
+
+.logo_check {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    font-size: 1.7rem;
+    /*border: 2px solid yellow;*/
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    font-size: 2.0rem;
+    /*border: 2px solid green;*/
+}
+
+.pagamentoSeguro > img {
+    margin-top: 0.8rem;
+    height: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+.letras_checkoutSeguro {
+    /*border: 2px solid red;*/
+    display: flex;
+    margin-top: 1rem;
+    font-size: 15px;
+    color: #83b293;
+    margin-left: 0.4rem;
+}
+
+#mainEnd {
+    /*border: 2px solid red;*/
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainDiv {
+    /*border: 2px solid black;*/
+    display: flex;
+    width: 90%;
+    height: 50%;
+    margin-left: 20%;
+    flex-wrap: wrap;
+}
+
+#mainResume {
+    display: flex;
+    /*border: 2px solid aqua;*/
+    width: 70%;
+    height: 3rem;
+}
+
+.stepbar {
+    width: 100%;
+    height: 0.28rem;
+    background: #222;
+    border-radius: 100rem;
+    margin-top: 0.7rem;
+}
+
+.stepbar-pag {
+    width: 100%;
+    height: 0.3rem;
+    background: rgb(187, 187, 187);
+    border-radius: 100rem;
+    margin-top: 0.7rem;
+}
+
+.stepbar-res {
+    width: 100%;
+    height: 0.3rem;
+    background: rgb(187, 187, 187);
+    border-radius: 100rem;
+    margin-top: 0.7rem;
+}
+
+.ol {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0,1fr);
+    grid-gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.divSize {
+    display: flex;
+    /*border: 2px solid red;*/
+    width: 100%;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.divInterna {
+    /*border: 2px solid green;*/
+    height: 99%;
+    width: 70%;
+}
+
+#editEndP {
+    width: 100%;
+    /*border: 2px solid red;*/
+    height: 3em;
+}
+
+.editEnd {
+    font-size: 17px;
+    /*border: 2px solid red;*/
+}
+
+.camposObg {
+    font-size: 13px;
+    margin-top: 4px;
+    /*border: 2px solid black;*/
+}
+
+.inputName {
+    margin-top: 10px;
+    display: flex;
+    /*border: 2px solid black;*/
+    width: 100%;
+    height: 70px;
+}
+
+.divSizeName {
+    /*border: 2px solid yellow;*/
+    width: 50%;
+}
+.inputName  input {
+    width: 95%;
+    height: 60%;
+    margin-top: 5px;
+    border: 1px solid ridge;
+}
+
+
+.divSizeSobr {
+    /*border: 2px solid yellow;*/
+    width: 50%;
+}
+
+.divSizeSobr label, .divSizeSobr input {
+    margin-left: 20px;
+}
+
+.paisRegiao {
+    position: relative;
+    /*border: 2px solid green;*/
+    margin-top: 15px;
+}
+
+.imgBr {
+    height: 40px;
+}
+
+.spanPR {
+    position: absolute;
+    margin-top: inherit;
+}
+
+.cpf {
+    /*border: 2px solid red;*/
+    margin-top: 15px;
+}
+
+.cpf input {
+    width: 47%;
+    height: 40px;
+    margin-top: 5px;
+    border: 1px solid ridge;
+}
+
+.cepEvalidacao {
+    display: flex;
+    margin-top: 15px;
+    /*border: 2px solid red;*/
+    width: 100%;
+    height: 70px;
+}
+
+.cep {
+    width: 50%;
+    height: 100%;
+}
+
+.cepEvalidacao input {
+    width: 95%;
+    height: 60%;
+    margin-top: 5px;
+    border: 1px solid ridge;
+}
+
+.validacao {
+    width: 50%;  
+}
+
+.validacao label {
+    width: 50%;  
+    color: white;
+}
+
+.btValidacao {
+    border: 1px solid #222;
+    width: 95%;
+    height: 60%;
+    margin-top: 5px;
+    background-color: #222;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+.endereco {
+    /*border: 2px solid black;*/
+    margin-top: 15px;
+}
+
+.endereco input {
+    background-color:#f5f5f5;
+    width: 70%;
+    height: 40px;
+    margin-top: 5px;
+    border: 1px solid ridge;
+}
+
+.numeroEcomplemento {
+    display: flex;
+    margin-top: 15px;
+    /*border: 2px solid red;*/
+    width: 100%;
+    height: 70px;
+}
+
+.numeroEnd {
+    width: 50%;
+    height: 100%;
+}
+
+.numeroEcomplemento input {
+    width: 95%;
+    height: 60%;
+    margin-top: 5px;
+    border: 1px solid ridge;
+}
+
+.complementoEnd {
+    width: 50%;
+}
+
+.complementoEnd label, .complementoEnd input {
+    margin-left: 20px;
+}
+
+.bairro {
+    margin-top: 15px;
+}
+
+.bairro input {
+    width: 47%;
+    height: 40px;
+    margin-top: 5px;
+    border: 1px solid ridge;
+    background-color:#f5f5f5
+}
+
+.estadoEcidade {
+    display: flex;
+    margin-top: 15px;
+    /*border: 2px solid red;*/
+    width: 100%;
+    height: 70px;
+}
+
+.estado {
+    width: 50%;
+    height: 100%;
+}
+
+.estadoEcidade input {
+    width: 95%;
+    height: 60%;
+    margin-top: 5px;
+    border: 1px solid ridge;
+}
+
+.cidade {
+    width: 50%;
+}
+
+.cidade label, .cidade input {
+    margin-left: 20px;
+}
+
+.dddEtelefone {
+    display: flex;
+    margin-top: 15px;
+    /*border: 2px solid red;*/
+    width: 100%;
+    height: 70px;
+}
+
+.ddd {
+    width: 50%;
+    height: 100%;
+}
+
+.dddEtelefone input {
+    width: 95%;
+    height: 60%;
+    margin-top: 5px;
+    border: 1px solid ridge;
+}
+
+.numeroTelefone {
+    width: 50%;
+}
+
+.numeroTelefone label, .numeroTelefone input {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px){
+    body {
+        width: 100vh;
+    }
+
+    main {
+        width: 100vh;
+    }
+
+    .mainDiv {
+        display: flex;
+        width: 100%;
+    }
+
+    .divSize{
+        width: 100vh;
+    }
+
+    .divInterna{
+        width: 100%;
+    }
+
+    .editFormPag{
+        font-size: 25px;
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #paypal h4 {
+        font-size: 25px;
+    }
+
+    #paypal p {
+        font-size: 20px;
+    }
+
+    #boleto p {
+        font-size: 20px;
+    }
+
+    #mainResume {
+        width: 40em;
+        font-size: 25px;
+    }
+
+    .ol {
+        grid-gap: 30px;
+    }
+
+
+
+    /* ALTERANDO PAGAMENTO SEGURO -------------- */
+    .pagamentoSeguro {
+        width: 117vh;
+    }
+
+    .pagamentoSeguro span {
+        font-size: 25px;
+        align-items: flex-end;
+    }
+
+    .pagamentoSeguro img {
+        height: 25px;
+        margin-top: 13px;
+    }
+
+    .logo_check {
+        margin-left: auto;
+    }
+
+    .letras_checkoutSeguro {
+        margin-right: auto;
+    }
+    /* ------------------------------------------ */
+}
+
+
+
+
+
+

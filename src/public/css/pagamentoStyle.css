@@ -1,0 +1,433 @@
+.pagamentoSeguro {
+    height: 3rem;   
+    display: flex;
+    background-color: rgb(250, 250, 250);
+    border-bottom: ridge;
+    border-top: ridge;
+    margin-top: 8rem;
+}
+
+.logo_check {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    font-size: 1.7rem;
+    /*border: 2px solid yellow;*/
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    font-size: 2.0rem;
+    /*border: 2px solid green;*/
+}
+
+.pagamentoSeguro > img {
+    margin-top: 0.8rem;
+    height: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+.letras_checkoutSeguro {
+    /*border: 2px solid red;*/
+    display: flex;
+    margin-top: 1rem;
+    font-size: 15px;
+    color: #83b293;
+    margin-left: 0.4rem;
+}
+
+#mainEnd {
+    /*border: 2px solid red;*/
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainDiv {
+    /*border: 2px solid black;*/
+    display: flex;
+    width: 90%;
+    height: 50%;
+    margin-left: 20%;
+    flex-wrap: wrap;
+}
+
+#mainResume {
+    display: flex;
+    /*border: 2px solid aqua;*/
+    width: 70%;
+    height: 3rem;
+}
+
+.stepbar {
+    width: 100%;
+    height: 0.28rem;
+    background: #222;
+    border-radius: 100rem;
+    margin-top: 0.7rem;
+}
+
+.stepbar-pag {
+    width: 100%;
+    height: 0.3rem;
+    background: #222;
+    border-radius: 100rem;
+    margin-top: 0.7rem;
+}
+
+.stepbar-res {
+    width: 100%;
+    height: 0.3rem;
+    background: rgb(187, 187, 187);
+    border-radius: 100rem;
+    margin-top: 0.7rem;
+}
+
+.ol {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0,1fr);
+    grid-gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.divSize {
+    display: flex;
+    /*border: 2px solid red;*/
+    width: 100%;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.divInterna {
+    /*border: 2px solid green;*/
+    height: 99%;
+    width: 70%;
+}
+
+.editFormPag {
+    font-size: 17px;
+}
+
+.divFormPag {
+    display: flex;
+    /*border: 2px solid red;*/
+    height: 4em;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    justify-content: space-between;
+}
+
+.labelPaypal {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.divFormPag img {
+    height: 3rem;
+    
+}
+
+.labelBoleto {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.labelCartao {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.labelCartao img {
+    margin-right: 10px;
+}
+
+.formParcelas {
+    margin-top: 3%;
+    display: flex;
+    width: 100%;
+}
+
+.formOptions {
+    width: 100%;
+}
+
+.formParcelas select {
+    margin-top: 2%;
+    width: 60%;
+    color: black;
+    padding-left: 2%;
+    font-size: 15px;
+    height: 50px;
+}
+
+.information {
+    display: flex;
+    margin-top: 10px; 
+}
+
+.informCartao {
+    display: flex;
+    width: 50%;
+    border: 2px solid red;
+}
+
+.input-nome {
+    display: flex;
+    margin-top: 5px;
+    width: 60%;
+    height: 30px;
+    margin-bottom: 2%;
+}
+
+.inputNumeroCartao {
+    display: flex;
+    width: 30%;
+    height: 10vh;
+    flex-direction: column;
+    margin-bottom: 1%;
+}
+
+#inputNumero {
+    width: 100%;
+    margin-top: 0.5%;
+    height: 30px;
+}
+
+.inputDataValidade {
+    display: flex;
+    height: 30px;
+    margin-left: 440px;
+    margin-top: 5px;
+    border: 1px solid groove;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cvm {
+    display: flex;
+    margin-top: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #e6e6e6;
+    text-align: center;
+}
+
+.checkboxSalvarDados {
+    margin-top: 12px;
+    margin-left: 2px;
+}
+
+.divFormPag button {
+    background: none;
+    border: 1px solid;
+    transition: 0.3s;
+}
+
+.divFormPag button.ativo {
+    border: 3px solid black
+}
+
+.divFormPag button:hover {
+    background-color: gainsboro;
+}
+
+.divFormPag img {
+    text-indent: -9999px;
+}
+
+.tabcontent {
+    display: none;
+}
+
+@media (max-width: 750px){
+
+ #mainResume ol span {
+    display: none;
+ }
+
+ main {
+        width: 100%;
+    }
+
+    .mainDiv {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3%;
+        min-width: 0px;
+    }
+
+    .divSize{
+        
+    }
+
+    .divInterna{
+        width: 100%;
+    }
+
+    .editFormPag{
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .input-nome {
+        margin-top: 10px;
+    }
+
+    /* ALTERANDO PAGAMENTO SEGURO -------------- */
+    .pagamentoSeguro {
+        width: 100%;
+    }
+
+    .pagamentoSeguro span {
+        font-size: 25px;
+        align-items: flex-end;
+    }
+
+    .pagamentoSeguro img {
+        height: 25px;
+        margin-top: 13px;
+    }
+
+    .logo_check {
+        margin-left: auto;
+    }
+
+    .letras_checkoutSeguro {
+        margin-right: auto;
+    }
+
+    /* ------------------------------------------ */
+
+    #mainResume {
+        width: 100vw;
+        font-size: 15px;
+    }
+
+    .ol {
+        grid-gap: 30px;
+    }
+
+     #mainResume ol span {
+    display: none;
+    }
+
+    /* -------------- alterando a div de forma de pagamentos ----------- */
+
+    .divFormPag {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .labelPaypal {
+        width: 100%;
+    }
+
+    .paypalH4 {
+        margin-top: 25vh;
+        font-size: 22px;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    #paypal p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .labelBoleto {
+        width: 100%;
+    }
+
+    #boleto p {
+        font-size: 20px;
+        margin-top: 25vh;
+    }
+
+    .labelCartao {
+        width: 100%;
+    }
+
+    .formParcelas label {
+        font-size: 20px;
+    }
+
+    .formParcelas select {
+        margin-top: 4vh;
+        font-size: 16px;
+        width: 80%;
+    }
+
+    #cartao {
+        margin-top: 25vh;
+    }
+
+    .information {
+        margin-top: 2vh;
+        font-size: 14px;
+    }
+
+    .formParcelas p {
+        font-size: 10px;
+    }
+
+    .inforCartao {
+        font-size: 16px;
+    }
+
+    #inputNumero {
+        width: 70%;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
