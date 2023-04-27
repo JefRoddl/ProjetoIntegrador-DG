@@ -2,9 +2,12 @@ const express = require('express');
 const path = require("path");
 const app = express();
 const router =  require('./router.js')
+const bodyParser = require('body-parser')
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname + '/views'));
+app.set('views', path.join(__dirname, '/views'));
+
+app.use(bodyParser.urlencoded({extended:true}));
 
 
 //Define a pasta public como sendo a pasta de arquivos estáticos

@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+
 <%- include('partials/head', {css: ['geral.css', 'login-adm.css', 'footerStyle.css', 'headerStyle.css']}) %>
 
 <body>
     <%- include('partials/header') %>
     
+
+
     <main class="login-adm">
-        <form method="POST" action="">
+        <form method="post" action="">
             <div class="parte-um-login-adm">
                <h1 class="titulo-login-adm">ADMINISTRADOR</h1>
                <br>
                <p class="subtitulo-login-adm">Login Adiminstrador</p>
 
                 <label for="email-adm">
-                <input class="estilo-input-adm-login" type="email" name="email-adm" id="email-adm" placeholder="E-mail administrador" required value="email@adm.com">
+                <input class="estilo-input-adm-login" type="email" name="emailAdm" id="email-adm" placeholder="E-mail administrador" required value="email@adm.com">
                 </label>
                 <br>
                 <label for="senha-adm">
-                <input class="estilo-input-adm-login" type="password" name="senha-adm" id="senha-adm" placeholder="Senha" required>
+                <input class="estilo-input-adm-login" type="password" name="senhaAdm" id="senha-adm" placeholder="Senha" required>
                 </label>
                 <br>
                 <label for="lembrar-adm">

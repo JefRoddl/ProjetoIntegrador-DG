@@ -1,4 +1,13 @@
+let login = "adm@123"
+let senha = "12345" 
+
 const administracao = {
+    enviarLogin: (req, res) => {
+        if(req.body.emailAdm == login && req.body.senhaAdm == senha) {
+            res.redirect('/produtos-adm')
+        }
+        res.render('login-adm')
+    },
     showLoginAdm: (req, res) => {
         res.render('login-adm')
     },
