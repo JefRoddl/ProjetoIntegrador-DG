@@ -1,24 +1,31 @@
-let login = "adm@123"
-let senha = "12345" 
+const dadosloginAdm = require('../infra/loginAdm.json')
+
 
 const administracao = {
     enviarLogin: (req, res) => {
-        if(req.body.emailAdm == login && req.body.senhaAdm == senha) {
-            res.redirect('/produtos-adm')
-        }
-        res.render('login-adm')
+      const emailAdm = req.body.emailAdm;
+      const senhaAdm = req.body.senhaAdm;
+  
+      // Procura um usuário administrador que tenha o mesmo e-mail fornecido pelo usuário
+      const usuarioAdm = dadosloginAdm.usuarios.find(usuario => usuario.email === emailAdm);
+  
+      if (usuarioAdm && usuarioAdm.senha === senhaAdm) {
+        res.redirect('/produtos-adm');
+      } else {
+        res.send('E-mail ou senha inválidos.');
+      }
     },
     showLoginAdm: (req, res) => {
-        res.render('login-adm')
+        res.render('login-adm', {dadosloginAdm})
     },
     showClientesAdm: (req, res) => {
-        res.render('clientes-adm')
+        res.render('clientes-adm', {dadosloginAdm})
     },
     showProdutosAdm: (req, res) => {
-        res.render('produtos-adm')
+        res.render('produtos-adm', {dadosloginAdm})
     },
     showPedidosAdm: (req, res) => {
-        res.render('pedidos-adm')
+        res.render('pedidos-adm', {dadosloginAdm})
     },
 }
 

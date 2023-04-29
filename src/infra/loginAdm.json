@@ -1,0 +1,30 @@
+{
+    "usuarios": [
+        {
+        "id": "1",
+        "nome": "jeferson",
+        "sobrenome": "Rodrigues da Luz",
+        "email": "adm@123",
+        "senha": "12345"
+        },
+        {
+        "id": "2",
+        "nome": "Joao",
+        "sobrenome": "Da Silva",
+        "email": "adm@1234",
+        "senha": "123456"
+        },
+        {
+        "id": "3",
+        "nome": "Carlos",
+        "sobrenome": "De Souza",
+        "email": "adm@12345",
+        "senha": "1234567"
+        }
+    ]
+
+}
+    
+
+
+
