@@ -10,7 +10,9 @@ const administracao = {
       const usuarioAdm = dadosloginAdm.usuarios.find(usuario => usuario.email === emailAdm);
   
       if (usuarioAdm && usuarioAdm.senha === senhaAdm) {
-        res.redirect('/produtos-adm');
+        const nomeAdm = usuarioAdm.nome;
+        const sobrenomeAdm = usuarioAdm.sobrenome
+        res.render('produtos-adm', {nomeAdm, sobrenomeAdm});
       } else {
         res.send('E-mail ou senha inválidos.');
       }
