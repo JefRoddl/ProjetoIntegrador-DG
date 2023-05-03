@@ -1,4 +1,4 @@
-const formLogin = document.getElementById('formLogin');
+/*const formLogin = document.getElementById('formLogin');
 const formCadastro = document.getElementById('formCadastro')
 
 //Campos input 'login'
@@ -112,5 +112,5 @@ function successValidation (input, message) {
     const small = formControl.querySelector('small');
     small.innerText = message;
     formControl.className = 'form-control success'
-};
+};*/
 
