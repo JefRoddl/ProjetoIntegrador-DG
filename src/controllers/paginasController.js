@@ -27,6 +27,7 @@ const paginasController = {
         const nome = req.body.nomeCadastro;
         const email = req.body.emailCadastro;
         const senha = req.body.senhaCadastro;
+        const confirmeSenha = req.body.confirmeSenha
       
         // criar um objeto com os dados do usuário
         const usuario = {
@@ -34,6 +35,12 @@ const paginasController = {
           email: email,
           senha: senha
         };
+
+        if(senha != confirmeSenha){
+          const erro = { mensagem: 'As senhas não coincidem.' };
+          return res.render('login.ejs', { erro });
+        }
+        
       
         // construir o caminho para o arquivo loginUsuario.json
         const arquivoUsuarios = path.join(__dirname, '../infra/loginUsuario.json');

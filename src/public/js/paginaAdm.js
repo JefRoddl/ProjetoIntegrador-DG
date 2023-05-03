@@ -1,4 +1,4 @@
-/*window.addEventListener('load', function(){
+window.addEventListener('load', function(){
     
     let botao = document.getElementById('botao');
     let tagAside = document.querySelector('aside');
@@ -21,4 +21,4 @@
     
 
 
-})*/
+})

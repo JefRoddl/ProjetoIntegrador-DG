@@ -47,9 +47,10 @@ function checkInputsLogin() {
 
 formCadastro.addEventListener('submit', (e) => {
     //Tirando comportamento padrão campo input cadastro
-    e.preventDefault();
+    e.preventDefault(); 
     //chamando função error/success campo input cadastro
     checkInputsCadastro();
+
 });
 
 function checkInputsCadastro() {
@@ -94,6 +95,7 @@ function checkInputsCadastro() {
         //Adicionar a classe 'success'
         successValidation(confirmeSenha);
     }   
+    
 }
 
 // parenteElement no JS é um método que retorna uma referencia direita do 
