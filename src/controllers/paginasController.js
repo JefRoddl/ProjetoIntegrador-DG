@@ -21,25 +21,61 @@ const paginasController = {
         res.render('login')
     },
 
+    validarLogin: (req, res) => {
+
+      const email = req.body.email
+      const senha = req.body.senha
+
+      const arquivoUsuarios = path.join(__dirname, '../infra/loginUsuario.json');
+
+
+      fs.readFile(arquivoUsuarios, (err, data) => {
+        if (err) {
+          console.log(err);
+          return res.status(500).send('Ocorreu um erro ao ler o arquivo JSON');
+        }
+    
+        // converter o conteúdo do arquivo para um objeto JavaScript
+        const usuarios = JSON.parse(data);
+    
+        // verificar se há um usuário com o email e senha fornecidos
+        const usuario = usuarios.find((user) => user.email === email && user.senha === senha);
+
+
+        if (usuario) {
+          // Login válido, redirecionar para a página de home
+          res.redirect('/home');
+        } else {
+          // Login inválido, exibir mensagem de erro
+          const erro = 'Credenciais de login inválidas';
+          res.send("login inválido")
+        }
+      });
+
+      
+      
+    },
+
 
     enviarLoginUsuario: (req, res) => {
-        // obter os dados do formulário enviados pelo cliente
+        // obtem os dados do formulário enviados pelo cliente
         const nome = req.body.nomeCadastro;
         const email = req.body.emailCadastro;
         const senha = req.body.senhaCadastro;
         const confirmeSenha = req.body.confirmeSenha
       
-        // criar um objeto com os dados do usuário
+
+        // verificar se as senhas coincidem
+        if (senha !== confirmeSenha) {
+          return res.send("senhas nao coincidem")
+        }
+
+        // cria um objeto com os dados do usuário
         const usuario = {
           nome: nome,
           email: email,
           senha: senha
         };
-
-        if(senha != confirmeSenha){
-          const erro = { mensagem: 'As senhas não coincidem.' };
-          return res.render('login.ejs', { erro });
-        }
         
       
         // construir o caminho para o arquivo loginUsuario.json
